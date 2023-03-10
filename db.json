@@ -5,45 +5,34 @@
       "username": "iliass",
       "password": "somepassword",
       "role": "admin",
-      "permissions": [
-        "lock",
-        "unlock"
-      ]
+      "permissions":"Allowed"
     },
     {
       "id": 2,
       "username": "abdellah",
       "password": "password",
       "role": "user",
-      "permissions": [
-        "lock"
-      ]
+      "permissions":"Allowed"
     },
     {
       "id": 3,
       "username": "youssef",
       "password": "pass",
       "role": "user",
-      "permissions": [
-        "lock",
-        "unlock"
-      ]
+      "permissions":"Allowed"
     },
     {
       "id": 4,
       "username": "issam",
       "password": "somepass",
       "role": "user",
-      "permissions": []
+      "permissions":"Not Allowed"
     },
     {
       "username": "wassim",
       "password": "passw",
       "role": "user",
-      "permissions": [
-        "lock",
-        "unlock"
-      ],
+      "permissions":"Not Allowed",
       "id": 5
     }
   ]

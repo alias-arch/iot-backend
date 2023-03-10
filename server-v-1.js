@@ -112,8 +112,8 @@ function authenticateAndAuthorizeLock(req, res, next) {
       } else {
         const username = decoded.username;
         const permissions = decoded.permissions; 
-        console.log(permissions.includes("lock"));
-        if (permissions.includes("lock")) {
+        console.log(permissions);
+        if (permissions === "Allowed") {
           req.username = username;
           req.permissions = permissions;
           next();
@@ -137,7 +137,7 @@ function authenticateAndAuthorizeUnlock(req, res, next) {
       } else {
         const username = decoded.username;
         const permissions = decoded.permissions;
-        if (permissions.includes("unlock")) {
+        if (permissions === "Allowed") {
           req.username = username;
           req.permissions = permissions;
           next();

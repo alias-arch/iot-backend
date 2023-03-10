@@ -20,7 +20,6 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model('User', userSchema);
 */
 
-// fetch user database
 const app = express();
 // Use middleware to handle incoming requests
 app.use(bodyParser.urlencoded({extended :false}));
@@ -196,7 +195,6 @@ app.get('/unlock', authenticateAndAuthorizeUnlock, (req, res) => {
 
 // Define endpoint to handle users data requests
 app.get('/users', authenticateAdmin, (req, res) => {
-    // Code to unlock the door
     fetch('http://localhost:5000/users/')
         .then(response => response.json())
         .then(data => {
@@ -208,7 +206,6 @@ app.get('/users', authenticateAdmin, (req, res) => {
 });
 // Define endpoint for admin to update user permissions 
 app.put('/update/:id', authenticateAdmin, (req, res) => {
-    // Code to unlock the door
     const userToUpdate = req.body;
     const  id = req.params.id;
     console.log(userToUpdate);
@@ -230,7 +227,6 @@ app.put('/update/:id', authenticateAdmin, (req, res) => {
 });
 
 app.post('/add', authenticateAdmin, (req, res) => {
-    // Code to unlock the door 
     const user = req.body;
     console.log(user);
     fetch('http://localhost:5000/users', {
@@ -252,7 +248,6 @@ app.post('/add', authenticateAdmin, (req, res) => {
 })
 
 app.get('/lockState', (req, res) => {
-    // Code to unlock the door
     res.json({ message: `${isLocked}` });
 });
 

@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "iliass",
+      "password": "somepassword",
+      "role": "admin",
+      "permissions": [
+        "lock",
+        "unlock"
+      ]
+    },
+    {
+      "id": 2,
+      "username": "abdellah",
+      "password": "password",
+      "role": "user",
+      "permissions": [
+        "lock"
+      ]
+    },
+    {
+      "id": 3,
+      "username": "youssef",
+      "password": "pass",
+      "role": "user",
+      "permissions": [
+        "lock",
+        "unlock"
+      ]
+    },
+    {
+      "id": 4,
+      "username": "issam",
+      "password": "somepass",
+      "role": "user",
+      "permissions": []
+    },
+    {
+      "username": "wassim",
+      "password": "passw",
+      "role": "user",
+      "permissions": [
+        "lock",
+        "unlock"
+      ],
+      "id": 5
+    }
+  ]
+}
